@@ -3,10 +3,10 @@
 /* root colors */
 :root{
   --cl_0:#01A8B3; /* magician's assistent :: moderate blue - perfect for contrast*/
-  --cl_1:#596F7D; /* faded blue - just a bit unlikely */
-  --cl_2:#723228; /* brown with a tent of red - spartacus */
-  --cl_3:#D1B79E; /* cream - beatchcomber */
-  --cl_4:#967A62; /* light dirt like color - brown sakura */
+  --cl_1:#290000; /* dark red */
+  --cl_2:#807F46; /* sewer green */
+  --cl_3:#E1C78E; /* light cream */
+  --cl_4:#AC0008; /* red  */
   --cl_5:#65453A; /* brown - slug */
   --cl_6:#55442A; /* darker brown :: brown */
   --cl_7:#000000; /* pure black :: may be useful */
@@ -17,7 +17,7 @@
 html, body{
   height:100%;
   overflow: hidden;
-  background-color: var(--cl_2);
+  background-color: var(--cl_3);
 }
 
 
@@ -28,12 +28,13 @@ html, body{
   width: 100%;
   overflow-x:auto;
   overflow-y:hidden;
-  background-color: var(--cl_5);
+  background-color: var(--cl_1);
   padding: 10px;
   margin: 0px;
+  border-bottom: 1px solid var(--cl_7);
 
-  color: var(--cl_1);
-  font-weight: bold;
+  color: var(--cl_2);
+
 
   scrollbar-face-color: var(--cl_1);
     scrollbar-shadow-color: var(--cl_3);
@@ -42,30 +43,83 @@ html, body{
     scrollbar-darkshadow-color: var(--cl_3);
     scrollbar-track-color: var(--cl_3);
     scrollbar-arrow-color: var(--cl_3);
-};
+}
 
 #arc_topbar::-webkit-scrollbar {
     width: 8px;
-};
+}
 
 #arc_topbar::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px var(--cl_0);
+    -webkit-box-shadow: inset 0 0 6px var(--cl_2);
     /*-webkit-border-radius: 10px;
     border-radius: 10px;*/
-};
+}
 
 #arc_topbar::-webkit-scrollbar-thumb {
     /*-webkit-border-radius: 10px;
     border-radius: 10px;*/
-    background: var(--cl_0);
-    -webkit-box-shadow: inset 0 0 6px var(--cl_0);
-};
+    background: var(--cl_2);
+    -webkit-box-shadow: inset 0 0 6px var(--cl_2);
+}
 
 #arc_page {
-  background-color: var(--cl_2);
+  background-color: var(--cl_3);
   padding : 20px;
   margin : 0px;
   width: 100%;
   height: 100%;
 
-};
+}
+
+#arc_main {
+
+  padding : 20px;
+  margin : 0px;
+  color : var(--cl_4);
+
+}
+
+#nav_menu {
+
+  display: inline-flex;
+
+}
+
+#nav_menu li {
+
+    display : block;
+    margin-left:0px;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px;
+    padding-left:15px;
+    padding-right: 15px;
+    font-family: Immortal;
+
+}
+
+.dist_gl {
+
+  margin-right:10px;
+}
+
+.active {
+  border-top: 2px solid var(--cl_3);
+  border-bottom: 2px solid var(--cl_3);
+  color : var(--cl_3);
+
+}
+
+.inactive {
+  border-top: 2px solid var(--cl_2);
+  border-bottom: 0px;
+  color : var(--cl_2);
+
+}
+
+.arc_paragraph {
+  color : var(--cl_4);
+  padding:20px;
+  font-size: 16px;
+  font-family: Immortal;
+}

@@ -10,6 +10,8 @@ $(document).ready(function(){
 		$("#skills_b").animate({"opacity":"1"}, 2000);
 		$("#future_b").animate({"opacity":"1"}, 2000);
 		$("#contact_b").animate({"opacity":"1"}, 2000);
+		$("#logo_div").animate({"opacity":"1"}, 2000);
+		$("#logo_div").animate({"border-width":"5px"}, 500);
 
 		$("#nav_menu li").addClass("inactive");
 		$("#nav_menu li").removeClass("active");

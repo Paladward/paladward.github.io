@@ -1,8 +1,7 @@
 
 
 $(document).ready(function(){
-
-		$("#arc_topbar").animate({"height":"82px"})
+		$("#arc_topbar").animate({"height":"12%"});
 
 		$("#home_b").animate({"opacity":"1"}, 2000);
 		$("#about_b").animate({"opacity":"1"}, 2000);
